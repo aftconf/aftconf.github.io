@@ -1,10 +1,45 @@
 body {
   padding-top: 5rem;
 }
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
 .navbar {
   margin-bottom: 20px;
 }
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.sched-date {
+  background-color:#DDD;
+  text-align:center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.sched-event {
+  text-align:center;
+  font-size: 1.15em;
+}
+
+.sched-time {
+  width:15%;
+}
+
+.sched-event-name {
+  text-align:left;
+  font-weight: bolder;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-authors {
+}
+
