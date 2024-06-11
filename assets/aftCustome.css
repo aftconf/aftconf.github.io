@@ -8,6 +8,7 @@
     --backgroundColor: rgb(255, 255, 255);
     --secondaryBackgroundColor: rgb(240, 240, 240);
     --bold-weight: 700;
+    --horSpaceUnit: 3rem;
 }
 
 
@@ -29,6 +30,7 @@ h2 {
     font-size: 2.0rem;
     font-weight: 400;
     margin-bottom: 0.25rem;
+    padding-top: var(--horSpaceUnit);
 }
 
 h3 {
@@ -60,28 +62,21 @@ a:hover {
     }
 }
 .container {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
 }
 .img-fluid {
     width: 100%; /* scale image larger then resolution */ 
     max-width: inherit;
 }
 hr {
+    margin-top: var(--horSpaceUnit);
     border-top: 1px solid var(--primary-color-shade-3);
 }
 .highlighted {
-    background-color: var(--primary-color);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    background-color: var(--secondaryBackgroundColor);
+    padding-top: calc(var(--horSpaceUnit) * 2);
+    margin-top: var(--horSpaceUnit);
+    padding-bottom: calc(var(--horSpaceUnit) * 2);
 }
-.highlighted .container p {
-    color: var(--primary-color-shade-3) !important;
-}
-.highlighted .container a {
-    color: var(--backgroundColor);
-}
-
 
 /* Nav Bar */ 
 .navbar-collapse {
