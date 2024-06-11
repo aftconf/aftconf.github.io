@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
 :root {
     --font-color: rgb(0, 0, 0);
     --font-color-shade-1: rgb(200, 200, 200);
-    --primary-color: rgb(4, 8, 220);
-    --primary-color-shade-1: rgb(110, 112, 226);
-    --primary-color-shade-2: rgb(156, 157, 236);
-    --primary-color-shade-3: rgb(201, 201, 242);
     --backgroundColor: rgb(255, 255, 255);
     --secondaryBackgroundColor: rgb(240, 240, 240);
     --bold-weight: 700;
     --horSpaceUnit: 3rem;
 }
 
+
+:root {
+    --primary-color: #4A0EF4;
+    --primary-color-shade-1: #7572FF;
+    --primary-color-shade-2: #7572FF;
+    --primary-color-shade-3: #F2F2F4 ;
+    --secondaryBackgroundColor: #F2F2F4;
+    --font-color-shade-1: rgb(183, 188, 203);
+}
+
+:root {
+    --primary-color: #7ED213;
+    /* --primary-color: #A9EB56; */
+    --primary-color-shade-1: #94A691;
+    --primary-color-shade-2: #989E97;
+    --primary-color-shade-3: #EDEEED;
+    --secondaryBackgroundColor: #EDEEED;
+}
+
+
+body {
+    font-family:'Inter', 'Helvetica Neue', 'Arial', sans-serif !important;
+    background-color: var(--backgroundColor);
+}
 
 /* Typography */
 p {
@@ -19,10 +41,18 @@ p {
 h1 {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
-    line-height: 1.0;
+    line-height: 0.95;
     font-size: 3.25rem;
     color: var(--primary-color);
     width: 75%;
+    letter-spacing: -0.2rem;
+}
+
+h1.title {
+    padding-top: 8rem;
+    font-size: 4.5rem;
+    padding-top: 7rem;
+    letter-spacing: -0.25rem;
 }
 
 h2 {
@@ -31,6 +61,7 @@ h2 {
     font-weight: 400;
     margin-bottom: 0.25rem;
     padding-top: var(--horSpaceUnit);
+    letter-spacing: -0.1rem;
 }
 
 h3 {
@@ -42,13 +73,18 @@ h3 {
     color: var(--primary-color-shade-1);
 }
 
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--primary-color-shade-3);
+}
+
 a {
     /* color: var(--primary-color-shade-1); */
     color: var(--font-color);
     text-decoration: underline;
     font-style: italic;
 }
-
 a:hover {
     color: var(--primary-color);
 }
@@ -79,6 +115,10 @@ hr {
 }
 
 /* Nav Bar */ 
+.navbar {
+    padding-top: calc(var(--horSpaceUnit)*0.5);
+    padding-bottom: calc(var(--horSpaceUnit)*0.5);
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -90,7 +130,7 @@ hr {
 }
 .navbar-light.bg-light {
     background-color: var(--backgroundColor) !important;
-    border-bottom: solid 1px var(--primary-color-shade-3);
+    border-bottom: solid 1.0px var(--primary-color-shade-1);
 }
 .navbar-light > .navbar-collapse > ul > .nav-item >.nav-link {
     color: var(--primary-color-shade-2) !important;
@@ -128,3 +168,10 @@ a.nav-link {
 .priceTable td:nth-child(2),
 .priceTable td:nth-child(3) 
 { text-align: end; }
+
+/* Custom Elements */ 
+.sponsorLevels {
+    /* text-align: center; */
+    padding-top: var(--horSpaceUnit);
+    color: var(--font-color-shade-1);
+}
