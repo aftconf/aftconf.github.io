@@ -1,18 +1,21 @@
 :root {
     --font-color: #000000;
-    --font-color-shade-1: #c8c8c8;
+    --font-color-shade-1: #a2a9b0;
+    
     --backgroundColor: #ffffff;
     --secondaryBackgroundColor: #F2F2F4;
-    --bold-weight: 700;
-    --horSpaceUnit: 3rem;
+    --secondaryBackgroundColor: #ebeced;
+    
     --primary-color: #000000;
     --primary-color-shade-1: #a2a9b0;
     --primary-color-shade-2: #a2a9b0;
     --primary-color-shade-3: #a2a9b0 ;
-    --secondaryBackgroundColor: #ebeced;
-    --font-color-shade-1: #a2a9b0;
+    
     --accentColor-1: #4589ff;  
     --accentColor-2: #b7e1ff;
+
+    --bold-weight: 700;
+    --horSpaceUnit: 3rem;
 }
 
 @media (max-width: 960px) { 
@@ -125,15 +128,13 @@ strong {
 }
 
 
-
 /* Layout */ 
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 960px;
     }
 }
-.container {
-}
+
 .img-fluid {
     width: 100%; 
     max-width: inherit;
@@ -222,7 +223,6 @@ a.nav-link {
 .titleContainer .container {
     padding-bottom: calc(var(--horSpaceUnit)*2);
 }
-
 .headerContainer {
     width: 100%;
     background-color: var(--accentColor-2);
@@ -245,7 +245,6 @@ a.nav-link {
     background-position: center center;
     background-size: 120%;
 }
-
 .negativeContainer {
     background-color: var(--font-color);
     color: var(--backgroundColor) !important;
@@ -268,10 +267,6 @@ a.nav-link {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.negative {
-    color: var(--backgroundColor) !important;
-}
-
 .sponsorFooter {
     background-color: var(--backgroundColor);
     padding-left: 36px;
@@ -305,15 +300,16 @@ a.nav-link {
     flex-grow: 2;
     width: 100%;
 }
-.footerCooperationLogos>a {
-    width: 100%;
-}
+.footerCooperationLogos>a,
 .footerCooperationLogos>a>img {
     width: 100%;
 }
 .inCooperationFooter {
     font-size: 12px;
     color: var(--font-color-shade-1);
+}
+.negative {
+    color: var(--backgroundColor) !important;
 }
 
 @media (max-width: 600px) {
