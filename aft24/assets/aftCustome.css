@@ -253,6 +253,19 @@ a.nav-link {
     margin-top: calc( var(--horSpaceUnit) * 2 );
     margin-bottom: calc( var(--horSpaceUnit) * 1);
 }
+
+.sponsor-logo-silver {
+  height: 65px; /* Set the desired height */
+  width: auto;  /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed the column width */
+}
+
+.sponsor-logo-gold {
+  height: 120px; /* Set the desired height */
+  width: auto;  /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed the column width */
+}
+
 .sponsorLevels {
     padding-top: var(--horSpaceUnit);
     color: var(--font-color-shade-1);
