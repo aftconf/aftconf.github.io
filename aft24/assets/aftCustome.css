@@ -249,6 +249,7 @@ table .sched-time {
     color: var(--primary-color-shade-1);
     font-weight: 800;
     text-align: left;
+    min-width: 4rem;
 }
 
 table .paper-title {
@@ -281,6 +282,11 @@ table .paper-title {
 @media (max-width: 600px) {
     table .sched-event {
         font-size: 1rem;
+    }
+
+    table .sched-time,
+    table .sched-event-name {
+        line-height: 1.1;
     }
 }
 
