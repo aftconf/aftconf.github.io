@@ -16,11 +16,13 @@
 
     --bold-weight: 700;
     --horSpaceUnit: 3rem;
+    --timeTableDateSpacing: 12rem;
 }
 
 @media (max-width: 960px) {
     :root {
         --horSpaceUnit: 2rem;
+        --timeTableDateSpacing: 8rem
     }
 }
 
@@ -90,11 +92,11 @@ a {
     /* color: var(--primary-color-shade-1); */
     color: var(--font-color);
     text-decoration: underline;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: var(--font-color-shade-1);
 }
 
 .teaser {
@@ -216,6 +218,72 @@ a.nav-link {
         font-size: 1.5rem;
     }
 }
+
+
+/*
+* Program Table 
+*/
+table {
+    margin-bottom: var(--timeTableDateSpacing);
+    vertical-align: top;
+}
+
+
+table hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+table td {
+    vertical-align: top;
+}
+
+
+table .sched-time,
+table .sched-event-name {
+    line-height: 1.2;
+}
+
+table .sched-time {
+    color: var(--primary-color-shade-1);
+    font-weight: 800;
+    text-align: left;
+}
+
+table .paper-title {
+    font-weight: 400;
+}
+
+/* Day */
+.sched-date {
+    font-size: 1.5rem;
+    text-align: left;
+
+    margin-bottom: 20px;
+    background-color: transparent;
+    height: auto;
+}
+
+.sched-date>td {
+    height: var(--timeTableDateSpacing);
+    vertical-align: bottom;
+    background: linear-gradient(black, black) 0 calc(100% - 20px)/100% 1.7px no-repeat,
+        transparent;
+    padding-bottom: 20px;
+}
+
+.sched-paper>td>ul {
+    list-style-position: outside;
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    table .sched-event {
+        font-size: 1rem;
+    }
+}
+
 
 /* Price Tables */
 .table thead th {
