@@ -46,7 +46,7 @@ h1 {
     font-size: 4.0rem;
     width: 75%;
     letter-spacing: -0.05rem;
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
     font-weight: var(--bold-weight);
 }
 
@@ -55,7 +55,7 @@ h1 {
     padding-top: 7rem;
     padding-bottom: 4.5rem;
     color: var(--primary-color);
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
 }
 
 h2 {
@@ -65,7 +65,7 @@ h2 {
     margin-bottom: 0.25rem;
     padding-top: var(--horSpaceUnit);
     letter-spacing: -0.0rem;
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
     font-weight: var(--bold-weight);
 }
 
@@ -76,7 +76,7 @@ h3 {
     margin-bottom: 0.3rem;
     margin-top: 2.0rem;
     color: var(--primary-color-shade-1);
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
     font-weight: var(--bold-weight);
 }
 
@@ -84,7 +84,7 @@ h4 {
     font-size: 1.0rem;
     /* font-weight: 400; */
     color: var(--primary-color-shade-3);
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
     font-weight: var(--bold-weight);
 }
 
@@ -101,7 +101,7 @@ a:hover {
 
 .teaser {
     font-size: 1.8rem;
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
     font-weight: var(--bold-weight);
     line-height: 1.1;
 }
@@ -168,7 +168,7 @@ hr {
 .navbar {
     padding-top: calc(var(--horSpaceUnit)*0.5);
     padding-bottom: calc(var(--horSpaceUnit)*0.5);
-    font-family: 'neue-haas-grotesk-display', sans-serif !important;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
 }
 
 .navbar-collapse {
