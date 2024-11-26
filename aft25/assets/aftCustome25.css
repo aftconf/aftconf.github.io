@@ -416,6 +416,14 @@ table .paper-title {
     align-self: center;
 }
 
+.footerCooperationLogos img {
+    max-width: 100%;    /* Ensure logos scale properly */
+    max-height: 75px;   /* Set a uniform height */
+    object-fit: contain; /* Preserve aspect ratio within the bounding box */
+    height: auto;       /* Automatically adjust height */
+    width: auto;        /* Automatically adjust width */
+}
+
 .footerCooperation,
 .footerGold {
     flex-grow: 3;
