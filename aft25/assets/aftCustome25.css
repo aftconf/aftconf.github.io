@@ -411,9 +411,9 @@ table .paper-title {
 .footerCooperationLogos {
     display: flex;
     align-items: baseline;
-    gap: 24px;
+    gap: 12px;
     width: 100%;
-    align-self: center;
+    align-self: left;
 }
 
 .footerCooperationLogos img {
@@ -436,9 +436,9 @@ table .paper-title {
 }
 
 .footerCooperationLogos>a,
-.footerCooperationLogos>a>img {
+/*.footerCooperationLogos>a>img {
     width: 100%;
-}
+}*/
 
 .inCooperationFooter {
     font-size: 12px;
